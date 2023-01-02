@@ -14,5 +14,6 @@
     <color name="graytext">#cfaaaaaa</color>
     <color name="lightblue_border">#4d2a387d</color>
     <color name="gray_btn_bg">#cccccc</color>
+    <color name="hint_color">#1c275b</color>
 
 </resources>

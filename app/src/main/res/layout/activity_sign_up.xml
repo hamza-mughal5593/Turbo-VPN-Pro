@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UI.login.SignUpActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/tool_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@color/blue"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_marginStart="@dimen/_20sdp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+<ImageView
+    android:id="@+id/back_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+                <TextView
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_toEndOf="@+id/back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="sans-serif-medium"
+                    android:lineSpacingExtra="3.3sp"
+                    android:text="Create Account"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="17.3sp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_marginVertical="@dimen/_30sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/cred_top_ic"/>
+
+        <LinearLayout
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:background="@drawable/ed_bg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp">
+            <ImageView
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/email_ic"/>
+            <EditText
+                android:textColorHint="@color/hint_color"
+                android:hint="Email"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:background="@drawable/ed_bg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp">
+            <ImageView
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/lock_ic"/>
+            <EditText
+                android:textColorHint="@color/hint_color"
+                android:hint="Password"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_14sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+        <TextView
+            android:visibility="invisible"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="#2a387d"
+            android:text="Forgot Password?"/>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/btn_bg_gray"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="Create Account"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:textColor="@color/graytext"
+                android:lineSpacingExtra="4sp"
+                android:text="Already have an account? "/>
+            <TextView
+                android:id="@+id/login_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:textColor="#992a387d"
+                android:lineSpacingExtra="4sp"
+                android:text="Login"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:layout_alignParentBottom="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:textSize="10.7sp"
+        android:textColor="#994f5eab"
+        android:lineSpacingExtra="2sp"
+        android:gravity="center_horizontal"
+        tools:text="By clicking “Creating account” your email address will be saved
+as your sign in account and you agree to our Terms of Services and
+Privacy Policy"/>
+</RelativeLayout>
