@@ -1,14 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".UI.ConnectionFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginHorizontal="@dimen/_20sdp">
 
-</FrameLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:background="@drawable/white_bg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/flag_ic"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/ic_world_1" />
+            <TextView
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/flag_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#2a387d"
+                android:lineSpacingExtra="3.3sp"
+                tools:text="USA - NEW YORK"/>
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/btn_down" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/btn_bg_gredient"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/world_id"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/ic_world_1" />
+
+            <TextView
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/world_id"
+                android:fontFamily="sans-serif-medium"
+                android:lineSpacingExtra="3sp"
+                android:textColor="#fdfcfe"
+                android:textSize="14.7sp"
+                android:textStyle="normal"
+                tools:text="Select the Fastest Server" />
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/ic_next_ic" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

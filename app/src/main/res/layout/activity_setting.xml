@@ -1,9 +1,332 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".UI.SettingActivity">
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/tool_main"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@color/blue"
+                android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <RelativeLayout
+                    android:layout_marginStart="@dimen/_20sdp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+                    <ImageView
+                        android:id="@+id/back_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/back_btn"
+                        android:fontFamily="sans-serif-medium"
+                        android:lineSpacingExtra="3.3sp"
+                        android:text="Setting"
+                        android:textAllCaps="true"
+                        android:textColor="#ffffff"
+                        android:textSize="17.3sp"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:textColor="#1c275b"
+                android:lineSpacingExtra="3sp"
+                android:gravity="center_horizontal"
+                tools:text="Connection Mode"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:lineSpacingExtra="3sp"
+                        android:textColor="#1c275b"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        tools:text="OpenVPN" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_22sdp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:lineSpacingExtra="3sp"
+                        android:textColor="#1c275b"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        tools:text="IPSec" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_22sdp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:lineSpacingExtra="3sp"
+                        android:textColor="#1c275b"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        tools:text="SSR" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_22sdp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:lineSpacingExtra="3sp"
+                        android:textColor="#1c275b"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        tools:text="ISSR" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_marginHorizontal="@dimen/_20sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <RadioButton
+
+                            android:layout_marginHorizontal="@dimen/_20sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <RadioButton
+                            android:layout_marginHorizontal="@dimen/_20sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <RadioButton
+                            android:layout_marginHorizontal="@dimen/_20sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#504f5eab"/>
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:textColor="#1c275b"
+                android:lineSpacingExtra="3sp"
+                android:gravity="center_horizontal"
+                tools:text="Kill switch"/>
+            <RelativeLayout
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_50sdp"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingExtra="3sp"
+                    android:textColor="#1c275b"
+                    android:textSize="15sp"
+
+                    android:textStyle="normal"
+                    tools:text="Block internet when connecting or
+changing services" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#504f5eab"/>
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:textColor="#1c275b"
+                android:lineSpacingExtra="3sp"
+                android:gravity="center_horizontal"
+                tools:text="Connection"/>
+            <RelativeLayout
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_50sdp"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingExtra="3sp"
+                    android:textColor="#1c275b"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    tools:text="Connect when Turbo VPN starts" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_50sdp"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingExtra="3sp"
+                    android:textColor="#1c275b"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    tools:text="Connection duration boost" />
+
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#504f5eab"/>
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:textColor="#1c275b"
+                android:lineSpacingExtra="3sp"
+                android:gravity="center_horizontal"
+                tools:text="Connection"/>
+            <RelativeLayout
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_50sdp"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingExtra="3sp"
+                    android:textColor="#1c275b"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    tools:text="Show notification when Turbo VPN is not
+connected" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#504f5eab"/>
+            <RelativeLayout
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_50sdp"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingExtra="3sp"
+                    android:textColor="#1c275b"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    tools:text="About Us" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
