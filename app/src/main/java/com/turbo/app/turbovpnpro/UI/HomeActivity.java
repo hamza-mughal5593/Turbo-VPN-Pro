@@ -16,17 +16,14 @@ import com.turbo.app.turbovpnpro.SpeedTestActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
-
+    BottomNavigationView navView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        BottomNavigationView navView = findViewById(R.id.nav_view);
-
-
-
-
+         navView = findViewById(R.id.nav_view);
+        loadFragment(new ConnectionFragment());
         navView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -45,6 +42,12 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        navView.getMenu().findItem(R.id.navigation_home).setChecked(true);
     }
 
     private void loadFragment(Fragment fragment) {

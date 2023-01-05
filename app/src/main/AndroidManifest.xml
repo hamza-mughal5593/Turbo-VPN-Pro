@@ -13,6 +13,13 @@
         android:theme="@style/Theme.TurboVPNPro"
         tools:targetApi="31">
         <activity
+            android:name=".UI.CountryList.CountryListActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".UI.login.ForgetPasswordActivity"
             android:exported="false" />
         <activity

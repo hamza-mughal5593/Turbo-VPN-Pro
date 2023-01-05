@@ -102,10 +102,12 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:textSize="@dimen/_10sdp"
+            android:id="@+id/forget_pass"
             android:textColor="#2a387d"
             android:text="Forgot Password?"/>
 
         <RelativeLayout
+            android:id="@+id/signupActivity"
             android:layout_marginTop="@dimen/_30sdp"
             android:background="@drawable/btn_bg_gray"
             android:layout_marginHorizontal="@dimen/_20sdp"

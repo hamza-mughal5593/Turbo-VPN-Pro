@@ -61,7 +61,7 @@
                 android:textColor="#1c275b"
                 android:lineSpacingExtra="3sp"
                 android:gravity="center_horizontal"
-                tools:text="Connection Mode"/>
+                android:text="Connection Mode"/>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -82,7 +82,7 @@
                         android:textColor="#1c275b"
                         android:textSize="15sp"
                         android:textStyle="normal"
-                        tools:text="OpenVPN" />
+                        android:text="OpenVPN" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -95,7 +95,7 @@
                         android:textColor="#1c275b"
                         android:textSize="15sp"
                         android:textStyle="normal"
-                        tools:text="IPSec" />
+                        android:text="IPSec" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -108,7 +108,7 @@
                         android:textColor="#1c275b"
                         android:textSize="15sp"
                         android:textStyle="normal"
-                        tools:text="SSR" />
+                        android:text="SSR" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -121,7 +121,7 @@
                         android:textColor="#1c275b"
                         android:textSize="15sp"
                         android:textStyle="normal"
-                        tools:text="ISSR" />
+                        android:text="ISSR" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_alignParentEnd="true"
@@ -173,7 +173,7 @@
                 android:textColor="#1c275b"
                 android:lineSpacingExtra="3sp"
                 android:gravity="center_horizontal"
-                tools:text="Kill switch"/>
+                android:text="Kill switch"/>
             <RelativeLayout
                 android:layout_marginHorizontal="@dimen/_20sdp"
                 android:layout_marginTop="@dimen/_20sdp"
@@ -190,7 +190,7 @@
                     android:textSize="15sp"
 
                     android:textStyle="normal"
-                    tools:text="Block internet when connecting or
+                    android:text="Block internet when connecting or
 changing services" />
 
                 <Switch
@@ -215,7 +215,7 @@ changing services" />
                 android:textColor="#1c275b"
                 android:lineSpacingExtra="3sp"
                 android:gravity="center_horizontal"
-                tools:text="Connection"/>
+                android:text="Connection"/>
             <RelativeLayout
                 android:layout_marginHorizontal="@dimen/_20sdp"
                 android:layout_marginTop="@dimen/_20sdp"
@@ -232,7 +232,7 @@ changing services" />
                     android:layout_centerVertical="true"
                     android:textSize="15sp"
                     android:textStyle="normal"
-                    tools:text="Connect when Turbo VPN starts" />
+                    android:text="Connect when Turbo VPN starts" />
 
                 <Switch
                     android:layout_width="wrap_content"
@@ -256,7 +256,7 @@ changing services" />
                     android:textColor="#1c275b"
                     android:textSize="15sp"
                     android:textStyle="normal"
-                    tools:text="Connection duration boost" />
+                    android:text="Connection duration boost" />
 
             </RelativeLayout>
             <View
@@ -275,7 +275,7 @@ changing services" />
                 android:textColor="#1c275b"
                 android:lineSpacingExtra="3sp"
                 android:gravity="center_horizontal"
-                tools:text="Connection"/>
+                android:text="Connection"/>
             <RelativeLayout
                 android:layout_marginHorizontal="@dimen/_20sdp"
                 android:layout_marginTop="@dimen/_20sdp"
@@ -292,7 +292,7 @@ changing services" />
                     android:textColor="#1c275b"
                     android:textSize="15sp"
                     android:textStyle="normal"
-                    tools:text="Show notification when Turbo VPN is not
+                    android:text="Show notification when Turbo VPN is not
 connected" />
 
                 <Switch
@@ -323,7 +323,7 @@ connected" />
                     android:textColor="#1c275b"
                     android:textSize="15sp"
                     android:textStyle="normal"
-                    tools:text="About Us" />
+                    android:text="About Us" />
 
             </RelativeLayout>
         </LinearLayout>

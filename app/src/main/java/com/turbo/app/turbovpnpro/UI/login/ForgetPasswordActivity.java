@@ -26,5 +26,6 @@ public class ForgetPasswordActivity extends AppCompatActivity {
                 finish();
             }
         });
+
     }
 }
