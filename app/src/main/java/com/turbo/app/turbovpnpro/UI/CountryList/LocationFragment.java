@@ -16,6 +16,7 @@ import com.turbo.app.turbovpnpro.Interface.ChildClick;
 import com.turbo.app.turbovpnpro.Interface.HeaderClick;
 import com.turbo.app.turbovpnpro.Models.CountryChildModel;
 import com.turbo.app.turbovpnpro.Models.CountryParentModel;
+import com.turbo.app.turbovpnpro.Models.ExpandableListDataItems;
 import com.turbo.app.turbovpnpro.R;
 
 import java.util.ArrayList;
@@ -25,11 +26,10 @@ import java.util.List;
 
 public class LocationFragment extends Fragment  implements ChildClick, HeaderClick {
 View view;
-    ExpandableListView expandableListView;
-
+    ExpandableListView expandableListViewExample;
     ExpandableListAdapter expandableListAdapter;
-    ArrayList<CountryParentModel> expandableListTitle;
-    HashMap<String, List<CountryChildModel>> expandableListDetail;
+    List<String> expandableTitleList;
+    HashMap<String, List<String>> expandableDetailList;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -40,47 +40,44 @@ View view;
 
 
 
-        expandableListView =   view.findViewById(R.id.expandableListView);
-        expandableListTitle = new ArrayList<>();
-        expandableListTitle.add(new CountryParentModel("Name","2 cities"));
-        expandableListTitle.add(new CountryParentModel("Name","2 cities"));
-        expandableListTitle.add(new CountryParentModel("Name","2 cities"));
+        expandableListViewExample = (ExpandableListView) view.findViewById(R.id.expandableListView);
+        expandableDetailList = ExpandableListDataItems.getData();
+        expandableTitleList = new ArrayList<String>(expandableDetailList.keySet());
+        expandableListAdapter = new CustomExpandableListAdapter(getActivity(), expandableTitleList, expandableDetailList);
+        expandableListViewExample.setAdapter(expandableListAdapter);
 
+        // This method is called when the group is expanded
+        expandableListViewExample.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+            @Override
+            public void onGroupExpand(int groupPosition) {
+                Toast.makeText(getActivity(), expandableTitleList.get(groupPosition) + " List Expanded.", Toast.LENGTH_SHORT).show();
+            }
+        });
 
-        HashMap<String, List<CountryChildModel>> expandableListDetail = new HashMap<String, List<CountryChildModel>>();
+        // This method is called when the group is collapsed
+        expandableListViewExample.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
+            @Override
+            public void onGroupCollapse(int groupPosition) {
+                Toast.makeText(requireActivity(), expandableTitleList.get(groupPosition) + " List Collapsed.", Toast.LENGTH_SHORT).show();
+            }
+        });
 
-
-
-        List<CountryChildModel> appCahe = new ArrayList<CountryChildModel>();
-        List<CountryChildModel> systemCache = new ArrayList<>();
-        List<CountryChildModel> obsoleteApk = new ArrayList<>();
-
-        appCahe.add(new CountryChildModel("City name",false));
-        appCahe.add(new CountryChildModel("City name",false));
-        appCahe.add(new CountryChildModel("City name",false));
-
-        systemCache.add(new CountryChildModel("City name",false));
-        systemCache.add(new CountryChildModel("City name",false));
-        systemCache.add(new CountryChildModel("City name",false));
-
-        obsoleteApk.add(new CountryChildModel("City name",false));
-        obsoleteApk.add(new CountryChildModel("City name",false));
-        obsoleteApk.add(new CountryChildModel("City name",false));
-
-        expandableListDetail.put("System Cache", systemCache);
-        expandableListDetail.put("App Cache", appCahe);
-        expandableListDetail.put("Obsolete Apk", obsoleteApk);
-
-
-
-
-        expandableListAdapter = new CustomExpandableListAdapter(getActivity(), expandableListTitle, expandableListDetail, this, this);
-
-
-        expandableListView.setAdapter(expandableListAdapter);
-//        expandableListView.expandGroup(0);
-
-
+        // This method is called when the child in any group is clicked
+        // via a toast method, it is shown to display the selected child item as a sample
+        // we may need to add further steps according to the requirements
+        expandableListViewExample.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v,
+                                        int groupPosition, int childPosition, long id) {
+                Toast.makeText(requireActivity(), expandableTitleList.get(groupPosition)
+                        + " -> "
+                        + expandableDetailList.get(
+                        expandableTitleList.get(groupPosition)).get(
+                        childPosition), Toast.LENGTH_SHORT
+                ).show();
+                return false;
+            }
+        });
         return view;
     }
 
