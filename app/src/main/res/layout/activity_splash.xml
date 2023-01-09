@@ -28,7 +28,7 @@
             android:textColor="#eeeeee"
             android:textSize="34.7sp"
             android:textStyle="bold"
-            tools:text="Turbo VPN" />
+            android:text="Turbo VPN" />
         <TextView
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
             android:textSize="12sp"
             android:textColor="#dfdfdf"
             android:lineSpacingExtra="2.3sp"
-            tools:text="Connect with the world safely amd Quickely"/>
+            android:text="Connect with the world safely amd Quickely"/>
     </LinearLayout>
 
 </RelativeLayout>

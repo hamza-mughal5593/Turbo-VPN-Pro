@@ -12,10 +12,6 @@ import android.widget.ExpandableListView;
 import android.widget.Toast;
 
 import com.turbo.app.turbovpnpro.Adapter.CustomExpandableListAdapter;
-import com.turbo.app.turbovpnpro.Interface.ChildClick;
-import com.turbo.app.turbovpnpro.Interface.HeaderClick;
-import com.turbo.app.turbovpnpro.Models.CountryChildModel;
-import com.turbo.app.turbovpnpro.Models.CountryParentModel;
 import com.turbo.app.turbovpnpro.Models.ExpandableListDataItems;
 import com.turbo.app.turbovpnpro.R;
 
@@ -24,7 +20,7 @@ import java.util.HashMap;
 import java.util.List;
 
 
-public class LocationFragment extends Fragment  implements ChildClick, HeaderClick {
+public class LocationFragment extends Fragment {
 View view;
     ExpandableListView expandableListViewExample;
     ExpandableListAdapter expandableListAdapter;
@@ -61,10 +57,6 @@ View view;
                 Toast.makeText(requireActivity(), expandableTitleList.get(groupPosition) + " List Collapsed.", Toast.LENGTH_SHORT).show();
             }
         });
-
-        // This method is called when the child in any group is clicked
-        // via a toast method, it is shown to display the selected child item as a sample
-        // we may need to add further steps according to the requirements
         expandableListViewExample.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v,
@@ -79,31 +71,6 @@ View view;
             }
         });
         return view;
-    }
 
-    @Override
-    public void UserClick(CountryChildModel expandedListText) {
-
-    }
-
-    @Override
-    public void UserHeaderClick(String list) {
-        Toast.makeText(getActivity(), ""+list, Toast.LENGTH_SHORT).show();
-//        if (list.equalsIgnoreCase("System Cache")) {
-//
-//            for (int i = 0; i < res.size(); i++) {
-//                if (res.get(i).isChecked()) {
-////                       Paper.book().write("isChecked",false);
-//                } else {
-////                        Paper.book().write("isChecked",true);
-//                }
-//            }
-//        }
-//        if (list.equalsIgnoreCase("App Cache")) {
-//            Toast.makeText(JunkActivity.this, "" + list, Toast.LENGTH_SHORT).show();
-//        }
-//        if (list.equalsIgnoreCase("Obsolete Apk")) {
-//            Toast.makeText(JunkActivity.this, "" + list, Toast.LENGTH_SHORT).show();
-//        }
     }
 }

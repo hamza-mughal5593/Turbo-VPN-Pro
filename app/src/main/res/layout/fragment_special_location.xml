@@ -1,14 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".UI.CountryList.SpecialLocationFragment">
+    <RelativeLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:background="@color/white"
+        android:orientation="horizontal">
 
-    <!-- TODO: Update blank fragment layout -->
+
+        <ImageView
+            android:id="@+id/flag_ic"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/flag_ic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/flag_ic"
+            android:fontFamily="sans-serif-light"
+            android:lineSpacingExtra="2.7sp"
+            android:textColor="#4f5eab"
+            android:textSize="12.7sp"
+            android:textStyle="normal"
+            tools:text="Smart Location" />
+
+        <ImageView
+            android:id="@+id/ivSelect"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/circle_unselect" />
+
+
+    </RelativeLayout>
+
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="2.7sp"
+        android:text="LOCATIONS"
+        android:textColor="#4f5eab"
+        android:textSize="13.3sp"
+        android:textStyle="normal" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclr"
+        android:layout_marginHorizontal="@dimen/_20sdp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        tools:listitem="@layout/section_row" />
 
-</FrameLayout>
+</LinearLayout>

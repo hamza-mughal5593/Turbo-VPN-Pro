@@ -13,37 +13,49 @@
         android:theme="@style/Theme.TurboVPNPro"
         tools:targetApi="31">
         <activity
-            android:name=".UI.CountryList.CountryListActivity"
+            android:name=".UI.AboutUsActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".UI.login.ForgetPasswordActivity"
-            android:exported="false" />
-        <activity
-            android:name=".UI.login.SignUpActivity"
-            android:exported="false" />
-        <activity
-            android:name=".UI.login.LoginActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:name=".UI.CountryList.CountryListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
         <activity
+            android:name=".UI.login.ForgetPasswordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.login.SignUpActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.login.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"></activity>
+        <activity
             android:name=".UI.SettingActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SpeedTestActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".UI.HomeActivity"
             android:exported="true"
-            android:label="@string/title_activity_home">
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -51,11 +63,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SplashActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

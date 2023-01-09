@@ -27,7 +27,7 @@
                 android:layout_height="@dimen/_20sdp"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="@dimen/_10sdp"
-                android:src="@drawable/ic_world_1" />
+                android:src="@drawable/flag_ic" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -166,6 +166,7 @@
         </LinearLayout>
 
         <RelativeLayout
+            android:id="@+id/select_fastest"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_alignParentBottom="true"

@@ -4,8 +4,9 @@
     android:layout_height="wrap_content"
 
 android:id="@+id/parent_main"
+    android:layout_marginBottom="@dimen/_15sdp"
 
-    android:padding="5dp">
+    android:paddingVertical="@dimen/_10sdp">
 
     <LinearLayout
         android:background="@color/white"

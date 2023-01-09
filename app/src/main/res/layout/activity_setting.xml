@@ -307,6 +307,7 @@ connected" />
                 android:layout_height="1dp"
                 android:background="#504f5eab"/>
             <RelativeLayout
+                android:id="@+id/about_btn"
                 android:layout_marginBottom="@dimen/_30sdp"
                 android:layout_marginHorizontal="@dimen/_20sdp"
                 android:layout_marginTop="@dimen/_20sdp"

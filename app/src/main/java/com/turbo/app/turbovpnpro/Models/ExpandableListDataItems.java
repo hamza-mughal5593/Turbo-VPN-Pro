@@ -12,33 +12,40 @@ public class ExpandableListDataItems {
         // We can modify them as per our choice.
         // And also choice of fruits/vegetables/nuts can be changed
         List<String> fruits = new ArrayList<String>();
-        fruits.add("Apple");
-        fruits.add("Orange");
-        fruits.add("Guava");
-        fruits.add("Papaya");
-        fruits.add("Pineapple");
+        fruits.add("City 1");
+        fruits.add("City 2");
+        fruits.add("City 3");
+        fruits.add("City 4");
+
 
         List<String> vegetables = new ArrayList<String>();
-        vegetables.add("Tomato");
-        vegetables.add("Potato");
-        vegetables.add("Carrot");
-        vegetables.add("Cabbage");
-        vegetables.add("Cauliflower");
+        vegetables.add("City 1");
+        vegetables.add("City 2");
+        vegetables.add("City 3");
+        vegetables.add("City 4");
+
 
         List<String> nuts = new ArrayList<String>();
-        nuts.add("Cashews");
-        nuts.add("Badam");
-        nuts.add("Pista");
-        nuts.add("Raisin");
-        nuts.add("Walnut");
+        nuts.add("City 1");
+        nuts.add("City 2");
+        nuts.add("City 3");
+        nuts.add("City 4");
+
+        List<String> Country4 = new ArrayList<String>();
+        Country4.add("City 1");
+        Country4.add("City 2");
+        Country4.add("City 3");
+        Country4.add("City 4");
+
 
         // Fruits are grouped under Fruits Items. Similarly the rest two are under
         // Vegetable Items and Nuts Items respectively.
         // i.e. expandableDetailList object is used to map the group header strings to
         // their respective children using an ArrayList of Strings.
-        expandableDetailList.put("Fruits Items", fruits);
-        expandableDetailList.put("Vegetable Items", vegetables);
-        expandableDetailList.put("Nuts Items", nuts);
+        expandableDetailList.put("Country 01", fruits);
+        expandableDetailList.put("Country 02", vegetables);
+        expandableDetailList.put("Country 03", nuts);
+        expandableDetailList.put("Country 04", Country4);
         return expandableDetailList;
     }
 }

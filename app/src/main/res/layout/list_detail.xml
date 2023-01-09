@@ -24,7 +24,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginBottom="@dimen/_5sdp"
-            android:layout_marginRight="@dimen/_5sdp"
             android:orientation="horizontal">
 
 
@@ -76,14 +75,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginRight="@dimen/_5sdp">
+                >
 
-                <ImageView
+                <RadioButton
+                    android:layout_centerVertical="true"
                     android:id="@+id/ivSelect"
-                    android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"
-android:src="@drawable/circle_unselect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
                     android:visibility="visible" />
+
+<!--                android:src="@drawable/circle_unselect"-->
                 <!--<ImageView
                     android:id="@+id/unSelect"
                     android:layout_width="@dimen/_20sdp"
@@ -105,50 +107,6 @@ android:src="@drawable/circle_unselect"
                  android:background="@drawable/check_box_design"/>-->
 
         </LinearLayout>
-
-    </LinearLayout>
-    <LinearLayout
-        android:visibility="gone"
-        android:layout_below="@+id/layout_main"
-        android:id="@+id/bat_main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <RelativeLayout
-            android:layout_marginStart="@dimen/_5sdp"
-            android:layout_marginEnd="@dimen/_5sdp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/image_bat"
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="@dimen/_50sdp"
-                android:layout_centerHorizontal="true"
-                android:padding="@dimen/_5sdp" />
-
-            <ImageView
-                android:id="@+id/select_btn"
-                android:layout_width="@dimen/_15sdp"
-                android:layout_height="@dimen/_15sdp"
-                android:layout_below="@+id/image_bat"
-                android:layout_marginStart="-15dp"
-                android:layout_marginTop="-15dp"
-                android:layout_toEndOf="@+id/image_bat"
-                />
-
-            <TextView
-                android:gravity="center"
-                android:id="@+id/text_bat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/image_bat"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/_10sdp"
-
-                android:text="weater"
-                android:textColor="@color/black" />
-
-        </RelativeLayout>
 
     </LinearLayout>
 

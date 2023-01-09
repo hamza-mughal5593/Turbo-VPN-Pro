@@ -13,10 +13,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.turbo.app.turbovpnpro.Interface.ChildClick;
-import com.turbo.app.turbovpnpro.Interface.HeaderClick;
-import com.turbo.app.turbovpnpro.Models.CountryChildModel;
-import com.turbo.app.turbovpnpro.Models.CountryParentModel;
 import com.turbo.app.turbovpnpro.R;
 
 import java.util.ArrayList;
