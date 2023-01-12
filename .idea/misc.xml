@@ -4,24 +4,31 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/alert_ic.xml" value="0.1895" />
+        <entry key="app/src/main/res/drawable/auto_dis_ic.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/btn_bg_gray.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/btn_bg_gredient.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/btn_bg_gredient_splash.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/btn_down.xml" value="0.1895" />
+        <entry key="app/src/main/res/drawable/connect_ic.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/cred_top_ic.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/download_ic.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/ed_bg.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/email_ic.xml" value="0.1895" />
+        <entry key="app/src/main/res/drawable/faq_ic.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/home_ic.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/line_12.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/lock_ic.xml" value="0.1895" />
+        <entry key="app/src/main/res/drawable/main_bg.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/menu_ic.xml" value="0.1895" />
+        <entry key="app/src/main/res/drawable/netflix_ic.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/prem_ic.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/setting_ic.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/speed_ic.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/splash_ic.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/upload_ic.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/white_bg.xml" value="0.1895" />
+        <entry key="app/src/main/res/layout/activity_feedback.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_feedback_main.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_forget_password.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.27318776448567705" />

@@ -40,10 +40,10 @@ View view;
                 startActivity(new Intent(requireActivity(), CountryListActivity.class));
             }
         });
-        needLogin();
+        conn_dialog();
         return view;
     }
-    private void needLogin() {
+    private void conn_dialog() {
 
         final Dialog dialog = new Dialog(getActivity());
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);

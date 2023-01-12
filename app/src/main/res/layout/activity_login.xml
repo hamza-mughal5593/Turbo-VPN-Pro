@@ -150,20 +150,20 @@
                 android:text="Create account"/>
         </LinearLayout>
     </LinearLayout>
-    <TextView
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:layout_marginHorizontal="@dimen/_30sdp"
-        android:layout_alignParentBottom="true"
-        xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
         android:fontFamily="sans-serif"
-        android:textStyle="normal"
-        android:textSize="10.7sp"
-        android:textColor="#994f5eab"
-        android:lineSpacingExtra="2sp"
         android:gravity="center_horizontal"
+        android:lineSpacingExtra="2sp"
+        android:textColor="#994f5eab"
+        android:textSize="10.7sp"
+        android:textStyle="normal"
         tools:text="By clicking “Creating account” your email address will be saved
 as your sign in account and you agree to our Terms of Services and
-Privacy Policy"/>
+Privacy Policy" />
 </RelativeLayout>

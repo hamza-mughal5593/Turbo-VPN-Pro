@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.turbo.app.turbovpnpro.R;
+import com.turbo.app.turbovpnpro.UI.Feedback.FeedbackMainActivity;
 import com.turbo.app.turbovpnpro.UI.HomeActivity;
 
 public class LoginActivity extends AppCompatActivity {
@@ -31,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
         findViewById(R.id.signupActivity).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+                startActivity(new Intent(LoginActivity.this, FeedbackMainActivity.class));
                 finish();
             }
         });

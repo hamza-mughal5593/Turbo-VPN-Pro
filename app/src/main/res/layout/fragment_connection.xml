@@ -6,7 +6,10 @@
     android:orientation="vertical"
     tools:context=".UI.ConnectionFragment">
 
-
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_300sdp"
+    android:background="@drawable/main_bgg"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
