@@ -13,14 +13,14 @@
         android:theme="@style/Theme.TurboVPNPro"
         tools:targetApi="31">
         <activity
-            android:name=".SplitActivity"
+            android:name=".UI.SplitActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".FeedbackActivity"
+            android:name=".UI.Feedback.FeedbackActivity"
             android:exported="false" />
         <activity
             android:name=".UI.Feedback.FeedbackMainActivity"
