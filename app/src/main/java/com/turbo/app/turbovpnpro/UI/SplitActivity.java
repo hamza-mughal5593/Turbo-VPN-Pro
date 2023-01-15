@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.turbo.app.turbovpnpro.Adapter.AppListAdapter;
 import com.turbo.app.turbovpnpro.Adapter.CountryListAdapter;
@@ -22,7 +23,12 @@ public class SplitActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_split);
 
-
+        findViewById(R.id.back_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         recyclr = findViewById(R.id.recyclr);
 
         applist.add("Chrome");

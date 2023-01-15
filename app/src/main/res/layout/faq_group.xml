@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/parent_main"
+    android:layout_marginBottom="@dimen/_15sdp"
+
+    android:paddingVertical="@dimen/_10sdp">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/faq_ic"/>
+        <TextView
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:id="@+id/title_txt"
+            android:textSize="14.7sp"
+            android:textColor="#4f5eab"
+            android:lineSpacingExtra="3sp"
+            android:text="Why I need a VPN?"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

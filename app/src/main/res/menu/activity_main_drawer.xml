@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/nav_feedback"
+        android:icon="@drawable/ic_feed_nav"
+        android:title="Feedback and support" />
+    <item
+        android:id="@+id/nav_rateus"
+        android:icon="@drawable/ic_rate_us_nav"
+        android:title="Rate Us" />
+    <item
+        android:id="@+id/nav_share"
+        android:icon="@drawable/ic_share_nav"
+        android:title="Tell your friends" />
+    <item
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/setting_ic"
+        android:title="Settings" />
+    <item
+        android:id="@+id/nav_faq"
+        android:icon="@drawable/faq_ic"
+        android:title="FAQ" />
+
+
+</menu>

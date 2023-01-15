@@ -1,6 +1,7 @@
 package com.turbo.app.turbovpnpro;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
 
 import android.os.Bundle;
 

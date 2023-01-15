@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+
+    android:paddingBottom="@dimen/_5sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="2.3sp"
+        android:text="VPN is virtual private network. It allows you to stay
+private stay secure, and access any online content you
+want -no matter where you are."
+        android:textColor="#4f5eab"
+        android:textSize="11.3sp"
+        android:id="@+id/faq_detail"
+        android:textStyle="normal" />
+
+</RelativeLayout>

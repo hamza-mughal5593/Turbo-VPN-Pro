@@ -33,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
         findViewById(R.id.sign_in_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this, SplitActivity.class));
+                startActivity(new Intent(LoginActivity.this, HomeActivity.class));
                 finish();
             }
         });
